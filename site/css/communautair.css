@@ -1,0 +1,192 @@
+body {
+    position: relative; /* Définir le corps en tant que référence de positionnement */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer les rembourrages par défaut */
+    background-color: black;
+}
+
+
+.paper {
+    position: relative; /* Positionnement relatif */
+    width: 100%; /* Largeur de 100% de la fenêtre */
+    height: auto; /* Hauteur auto pour s'ajuster au contenu */
+    z-index: 2; /* Placer en premier plan */
+}
+
+.paper img {
+    width: 100%; /* Ajuster la largeur pour couvrir entièrement .paper */
+    height: auto; /* Ajuster la hauteur en conséquence */
+    object-fit: cover; /* Ajuster l'image pour couvrir entièrement .paper */
+}
+
+
+.vignettes-container {
+    display: flex;
+    flex-direction: row; /* Aligner les vignettes de droite à gauche */
+    justify-content: flex-end; /* Aligner les vignettes à droite */
+    position: absolute;
+    top: -175px;
+    right: 210px;
+    z-index: 4;
+    width: 40%;
+}
+
+.vignette {
+    width: 25%;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer; /* Ajout du curseur pointer */
+}
+.vignette.slide-down {
+    transform: translateY(100px); /* Décalage de 10 pixels vers le bas */
+    transition: transform 0.3s ease; /* Transition fluide de 0.3 seconde */
+}
+
+.collant {
+    position: absolute;
+    left: 170px; /* Ajuster selon votre besoin */
+    z-index: 100; /* Augmenter davantage le z-index si nécessaire */
+    width: 16%;
+    /* Autres styles */
+}
+.collant img{
+    width: 180%;
+}
+
+.stone{
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    right: 48%;
+    left: 35%;
+}
+
+.stone img{
+    width: 180%;
+    height: auto;
+}
+.stone p{
+    left: 40%;
+    position: relative;
+    top: 105%;
+    font-size: large;
+    text-align: center;
+    font-family: cursive;
+    max-width: 150ch;
+    line-height: 205%;
+    margin: -70%;
+    margin-top: 18%;
+}
+/* CSS pour les écrans de taille moyenne à grande */
+@media screen and (min-width: 768px) {
+    /* Ajoutez vos styles CSS ici pour les écrans de taille moyenne à grande */
+}
+
+/* CSS pour les écrans de petite taille (comme les téléphones mobiles) */
+@media screen and (max-width: 767px) {
+    /* Ajoutez vos styles CSS ici pour les écrans de petite taille */
+}
+
+/* CSS pour les écrans très petits (par exemple, les montres intelligentes) */
+@media screen and (max-width: 479px) {
+    /* Ajoutez vos styles CSS ici pour les écrans très petits */
+}
+
+.container {
+    position: absolute;
+    top: 19%;
+    left: 200px;
+    width: 30%;
+    height: 80%;
+    z-index: 4;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container p {
+    margin-right: -53%;
+    position: relative;
+    top: -9%;
+    z-index: 5;
+    font-size: large;
+    font-family: cursive;
+    left: 120%;
+    max-width: 80ch;
+    line-height: 205%;
+    text-align: justify;
+}
+
+.cospaly {
+    position: absolute;
+    top: 66%;
+    z-index: 3; /* Baissez le z-index pour l'image */
+    width: 25%;
+    left: 15%;
+    margin-top: 2%;
+}
+.cospaly img{
+    width: 100%;
+    height: 25%;
+}
+
+.fanart {
+    position: absolute;
+    top: 66%;
+    z-index: 3; /* Baissez le z-index pour l'image */
+    width: 25%;
+    right: 15%;
+    margin-top: 2%;
+}
+
+.fanart img {
+    width: 100%;
+    height: 25%;
+}
+
+.p1 {
+    position: absolute; /* Assurez-vous que le paragraphe est positionné par rapport à son parent */
+    z-index: 4; /* Augmentez le z-index pour le paragraphe */
+    font-family: cursive;
+    font-size: large;
+    top: 70%;;
+    left: 17%;
+    text-align: center;
+    max-width: 150ch;
+    line-height: 205%;
+    margin-top: 18%;
+}
+
+
+.name1 {
+    position: absolute;
+    z-index: 4; /* Placer en premier plan */
+    width:20%;
+    top: 20%;
+        margin-left: 45%;
+}
+.name2{
+    position: absolute;
+    z-index: 4;
+    width: 30%;
+    top: 34%;
+    margin-top: 1%;
+    margin-left: 35%;
+}
+.name3{
+    position: absolute;
+    z-index: 4;
+    width:30%;
+    top: 61%;
+    right:35%
+}
+.crea{
+    position: absolute;
+    z-index: 4;
+    width:30%;
+    top: 13%;
+    right:35%
+}

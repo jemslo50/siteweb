@@ -1,0 +1,245 @@
+body {
+    position: relative; /* Définir le corps en tant que référence de positionnement */
+    margin: 0; /* Supprimer les marges par défaut */
+    padding: 0; /* Supprimer les rembourrages par défaut */
+    background-color: black;
+}
+
+
+.paper {
+    position: relative; /* Positionnement relatif */
+    width: 100%; /* Largeur de 100% de la fenêtre */
+    height: auto; /* Hauteur auto pour s'ajuster au contenu */
+    z-index: 2; /* Placer en premier plan */
+}
+
+.paper img {
+    width: 100%; /* Ajuster la largeur pour couvrir entièrement .paper */
+    height: auto; /* Ajuster la hauteur en conséquence */
+    object-fit: cover; /* Ajuster l'image pour couvrir entièrement .paper */
+}
+
+.vignettes-container {
+    display: flex;
+    flex-direction: row; /* Aligner les vignettes de droite à gauche */
+    justify-content: flex-end; /* Aligner les vignettes à droite */
+    position: absolute;
+    top: -175px;
+    right: 210px;
+    z-index: 4;
+    width: 40%;
+}
+
+.vignette {
+    width: 25%;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer; /* Ajout du curseur pointer */
+}
+.vignette.slide-down {
+    transform: translateY(100px); /* Décalage de 10 pixels vers le bas */
+    transition: transform 0.3s ease; /* Transition fluide de 0.3 seconde */
+}
+
+.img1{
+    position: absolute;
+    top: 18%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+
+.img2{
+    position: absolute;
+    top: 18%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+
+.img3{
+    position: absolute;
+    top: 45%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+
+.img4{
+    position: absolute;
+    top: 45%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+
+.img5{
+    position: absolute;
+    top: 69%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+
+.img6{
+    position: absolute;
+    top: 69%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+.journal{
+    position: absolute;
+    top: 32%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+.casquette{
+    position: absolute;
+    top: 32%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+.collier{   
+    position: absolute;
+    top: 56%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+.pop{
+    position: absolute;
+    top: 56%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+.jouet{
+    position: absolute;
+    top: 83%;
+    z-index: 4;
+    width: 25%;
+    left: 15%;
+}
+.T-shirt{
+    position: absolute;
+    top: 83%;
+    z-index: 4;
+    width: 25%;
+    right: 15%;
+}
+
+.image-button {
+    position: absolute;
+    z-index: 5;
+    width: 15%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: cursive;
+}
+
+.image-button:nth-of-type(1) {
+     top: 37%;
+    left: 15%;
+    cursor: pointer;
+    height: 55px;
+    left: 20%;
+    margin:0%;
+}
+
+
+.image-button:nth-of-type(2) {
+    top: 37%;
+    right: 15%;
+    cursor: pointer;
+    height: 55px;
+    right: 20%;
+    margin:0%;
+}
+
+.image-button:nth-of-type(3) {
+    top: 61%;
+    left: 15%;
+    cursor: pointer;
+    height: 55px;
+    left: 20%;
+    margin:0%;
+}
+
+
+.image-button:nth-of-type(4) {
+    top: 61%;
+    right: 15%;
+    cursor: pointer;
+    height: 55px;
+    right: 20%;
+    margin:0%;
+}
+
+
+.image-button:nth-of-type(5) {
+    top: 87%;
+    left: 15%;
+    cursor: pointer;
+    height: 55px;
+    left: 20%;
+    margin-top:1%;
+}
+
+
+.image-button:nth-of-type(6) {
+    top: 87%;
+    right: 15%;
+    cursor: pointer;
+    height: 55px;
+    right: 20%;
+    margin-top:1%;
+}
+
+
+.image-button:nth-of-type(1),
+.image-button:nth-of-type(2),
+.image-button:nth-of-type(3),
+.image-button:nth-of-type(4),
+.image-button:nth-of-type(5),
+.image-button:nth-of-type(6) {
+    border: 6px solid black;
+    border-radius: 10px; /* pour arrondir les bords */
+    background-color: white;
+}
+
+.collant {
+    position: absolute;
+    left: 170px; /* Ajuster selon votre besoin */
+    z-index: 100; /* Augmenter davantage le z-index si nécessaire */
+    width: 16%;
+    top:2%;
+    /* Autres styles */
+}
+.collant img{
+    width: 180%;
+}/* CSS pour les écrans de taille moyenne à grande */
+@media screen and (min-width: 768px) {
+    /* Ajoutez vos styles CSS ici pour les écrans de taille moyenne à grande */
+}
+
+/* CSS pour les écrans de petite taille (comme les téléphones mobiles) */
+@media screen and (max-width: 767px) {
+    /* Ajoutez vos styles CSS ici pour les écrans de petite taille */
+}
+
+/* CSS pour les écrans très petits (par exemple, les montres intelligentes) */
+@media screen and (max-width: 479px) {
+    /* Ajoutez vos styles CSS ici pour les écrans très petits */
+}
+.Pa {
+    position: absolute;
+    top: 91%;
+    z-index: 3;
+    right: 75%;
+    text-align: start;
+    font-family: cursive;
+    font-size: x-large;
+}
